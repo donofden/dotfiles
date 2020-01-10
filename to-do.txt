@@ -1,0 +1,13 @@
+[url "git@github.com:"]
+ insteadOf = https://github.com/
+[includeIf "gitdir:~/git/"]
+  path = ~/.gitconfig.local
+[includeIf "gitdir:~/mygit/"]
+  path = ~/.gitconfig.personal
+
+brew list > brews.txt
+for f in $(cat brews.txt); do brew install $f; done
+
+brew cask list > brews-cask.txt
+for f in $(cat brews-cask.txt); do brew cask install $f; done
+

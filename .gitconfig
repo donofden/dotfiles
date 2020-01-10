@@ -1,0 +1,38 @@
+[user]
+	name = Aravind Kumar G
+	email = 
+	username = 
+[core]
+	editor = vi
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
+[web]
+	browser = google-chrome
+[instaweb]
+	httpd = apache2 -f
+[rerere]
+	enabled = 1
+	autoupdate = 1
+[push]
+	default = matching
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[difftool]
+	prompt = false
+[sequence]
+	editor = interactive-rebase-tool
+
